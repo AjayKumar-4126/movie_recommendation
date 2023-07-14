@@ -4,8 +4,8 @@ import pandas as pd
 import numpy as np
 
 st.title("Movie Recommendatation System")
-movie_df=pickle.load(open("movie_recm.pkl","rb"))
-similarity=pickle.load(open("similarity.pkl","rb"))
+movie_df=pickle.load(open("drive/MyDrive/movie_recommendation/movie_recm.pkl","rb"))
+similarity=pickle.load(open("drive/MyDrive/movie_recommendation/similarity.pkl","rb"))
 list_movie=np.array(movie_df["title"])
 option = st.selectbox(
 "Select Movie ",
